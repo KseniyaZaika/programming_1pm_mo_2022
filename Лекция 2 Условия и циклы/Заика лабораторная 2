@@ -1,0 +1,42 @@
+#include <iostream>
+int main(){
+//1
+    int a,b,c;
+    std::cin >> a >> b >> c;
+    if ((a > b) && (b > c)) {
+        std::cout << (a - b - c);
+    }
+    else if ((b > a) && ((b%c) == 0)){
+        std::cout << (b / c + b - a);
+    }
+    else {
+        std::cout << (a + b + c);
+    }
+// 2
+    int n;
+    std::cin >> n;
+    switch(n)
+    {
+        case 0: std::cout << "Zero";
+            break;
+        case 1: std::cout << "One";
+            break;
+        case 2: std::cout << "Two";
+            break;
+        case 3: std::cout << "Three";
+            break;
+        case 4: std::cout << "Four";
+            break;
+        case 5: std::cout << "Five";
+            break;
+        case 6: std::cout << "Six";
+            break;
+        case 7: std::cout << "Seven";
+            break;
+        case 8: std::cout << "Eight";
+            break;
+        case 9: std::cout << "Nine";
+        default: std::cout << "default";
+
+    }
+}
